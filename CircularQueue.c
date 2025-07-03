@@ -60,7 +60,7 @@ void Display(struct queue q)
     int i=q.front+1;
     do
         {
-            printf("%d",q.Q[i]);
+            printf("%d\n",q.Q[i]);
             i = (i+1)%q.size;
         } while (i != (q.rear+1)%q.size);
 }
